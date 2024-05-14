@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|c:\\users\\talar\\source\\repos\\app_movie\\movie_app\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\components\\pages\\moviepages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:components\\pages\\moviepages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\components\\pages\\moviepages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:components\\pages\\moviepages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\components\\pages\\moviepages\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:components\\pages\\moviepages\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\components\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:components\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\components\\pages\\moviepages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54E527EA-EAFF-45BF-967E-DA26DAF76BB8}|movie_app.csproj|solutionrelative:components\\pages\\moviepages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T17:05:58.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Movie.cs",
+              "RelativeDocumentMoniker": "Components\\Movie.cs",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Movie.cs",
+              "RelativeToolTip": "Components\\Movie.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA5wBEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T20:29:23.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T14:58:17.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Create.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\MoviePages\\Create.razor",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Create.razor",
+              "RelativeToolTip": "Components\\Pages\\MoviePages\\Create.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-05T21:08:48.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Index.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\MoviePages\\Index.razor",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Index.razor",
+              "RelativeToolTip": "Components\\Pages\\MoviePages\\Index.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAEUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-05T18:13:40.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Edit.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\MoviePages\\Edit.razor",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Edit.razor",
+              "RelativeToolTip": "Components\\Pages\\MoviePages\\Edit.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T18:01:58.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.razor",
+              "DocumentMoniker": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Details.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\MoviePages\\Details.razor",
+              "ToolTip": "C:\\Users\\talar\\source\\repos\\App_movie\\movie_app\\Components\\Pages\\MoviePages\\Details.razor",
+              "RelativeToolTip": "Components\\Pages\\MoviePages\\Details.razor",
+              "ViewState": "AQIAADoAAAAAAAAAAAAMwEMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T16:32:20.072Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

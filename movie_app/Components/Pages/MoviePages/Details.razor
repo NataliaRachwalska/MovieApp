@@ -1,0 +1,80 @@
+﻿@page "/movies/details"
+@inject movie_app.Data.ApplicationDbContext DB
+@using movie_app.Components
+@inject NavigationManager NavigationManager
+@using Microsoft.EntityFrameworkCore;
+@rendermode InteractiveServer
+
+<PageTitle>Details</PageTitle>
+
+<h1>Details</h1>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    @if (Movie is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <dl class="row">
+            <dt class="col-sm-2">Title</dt>
+            <dd class="col-sm-10">@Movie.Title</dd>
+            <dt class="col-sm-2">Description</dt>
+            <dd class="col-sm-10">@Movie.Description</dd>
+            <dt class="col-sm-2">RelaseDate</dt>
+            <dd class="col-sm-10">@Movie.RelaseDate?.ToShortDateString()</dd>
+            <dt class="col-sm-2">Rate</dt>
+            <dd class="col-sm-10">@Movie.Rate</dd>
+            <dt class="col-sm-2">Film thumbnail</dt>
+            <dd class="col-sm-10"><img src="@Movie.ImageUrl" alt="Movie Image" style="max-width: 100%; height: auto;" /></dd>
+        </dl>
+
+        <div class="mb-3">
+            <label for="rate" class="form-label">How do you rate this film?</label>
+            <InputNumber id="rate" @bind-Value="NewRate" class="form-control" style="width: 200px" min="0" max="10" />
+        </div>
+        <div>
+           <button class= " btn btn-primary " @onclick= " CalculateRate ">Rate</button >
+       </div>
+        <div>
+
+            <div>
+                <a href="@($"/movies/edit?id={Movie.Id}")">Edit</a> |
+                <a href="@($"/movies")">Back to List</a> 
+            </div>
+
+           
+        </div>
+    }
+</div>
+
+@code {
+
+    [SupplyParameterFromQuery]
+    public int Id { get; set; }
+    int NewRate { get; set; }
+    [SupplyParameterFromForm]
+    public Movie? Movie { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Movie ??= await DB.Movie.FirstOrDefaultAsync(m => m.Id == Id);
+
+        if (Movie is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+        }
+        
+    }
+
+    private void CalculateRate()
+    {
+        Movie.Quantity=Movie.Quantity+1;
+        Movie.Sum = Movie.Sum + NewRate;
+        Movie.Rate = Movie.Sum / Movie.Quantity;
+    
+    }
+
+   
+}

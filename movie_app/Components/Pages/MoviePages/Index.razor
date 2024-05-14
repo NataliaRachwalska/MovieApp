@@ -1,0 +1,91 @@
+﻿@page "/movies"
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject movie_app.Data.ApplicationDbContext DB
+@using movie_app.Components
+@using Microsoft.EntityFrameworkCore
+@using System
+@rendermode InteractiveServer
+<PageTitle>Index</PageTitle>
+
+<h1>MOVIES</h1>
+<p>
+<label for="Sort">Sort:</label>
+<select id="titleSortDirection" @bind="SortDirection">
+    <option value="Asc_tit">Title ascending</option>
+    <option value="Desc_tit">Title descending</option>
+    <option value="Asc_rdate">Release date ascending</option>
+    <option value="Desc_rdate">Release date descending</option>
+    <option value="Asc_rate">Rate ascending</option>
+    <option value="Desc_rate">Rate descending</option>
+</select>
+</p>
+<div></div>
+<button class="btn btn-primary" @onclick="Sort">Sort</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Release Date</th>
+            <th>Rate</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in SortedMovies)
+        {
+            <tr>
+                <a href="@($"movies/details?id={movie.Id}")">@movie.Title</a>
+                <td>@movie.RelaseDate?.ToShortDateString()</td>
+                <td>@movie.Rate</td>
+                <td>
+                    <a href="@($"movies/edit?id={movie.Id}")">Edit</a> |
+                    <a href="@($"movies/delete?id={movie.Id}")">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code{
+    private List<Movie> SortedMovies = new List<Movie>();
+    private string SortDirection = "Asc_tit";
+    protected override async Task OnInitializedAsync()
+    {
+        SortedMovies = await GetMoviesAsync();
+    }
+
+    private async Task<List<Movie>> GetMoviesAsync()
+    {
+        var movies = await DB.Movie.OrderBy(m => m.Title).ThenBy(m => m.RelaseDate).ToListAsync();
+        return movies;
+    }
+
+    private void Sort()
+    {
+        if (SortDirection == "Asc_tit")
+        {
+            SortedMovies = SortedMovies.OrderBy(m => m.Title).ThenBy(m => m.RelaseDate).ToList();
+        }
+        else if(SortDirection == "Desc_tit")
+        {
+            SortedMovies = SortedMovies.OrderByDescending(m => m.Title).ThenBy(m => m.RelaseDate).ToList();
+        }
+        else if(SortDirection == "Asc_rdate")
+        {
+            SortedMovies = SortedMovies.OrderBy(m => m.RelaseDate).ThenBy(m => m.Title).ToList();
+        }
+        else if(SortDirection == "Desc_rdate")
+        {
+            SortedMovies = SortedMovies.OrderByDescending(m => m.RelaseDate).ThenBy(m => m.Title).ToList();
+        }
+        else if(SortDirection == "Asc_rate")
+        {
+            SortedMovies = SortedMovies.OrderBy(m => m.Rate).ThenBy(m => m.Title).ToList();
+        }
+        else
+        {
+            SortedMovies = SortedMovies.OrderByDescending(m => m.Rate).ThenBy(m => m.Title).ToList();
+        }
+    }
+
+}
